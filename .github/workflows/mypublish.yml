@@ -11,7 +11,7 @@ on:
 
 jobs:
   download:
-    name: Create artifact from Cloud Storage
+    name: Build and create artifact
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
