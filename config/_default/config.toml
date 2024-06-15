@@ -1,6 +1,6 @@
 baseURL = "http://localhost"
 copyright = "Copyright © 2021"
-title = "hugo-theme-gruvbox"
+title = "RpChat"
 #paginate = 10
 enableRobotsTXT = true
 # Enable to calculate the last modified date from Git history and show it in the post header
@@ -40,7 +40,7 @@ enableRobotsTXT = true
   description = "A retro-looking Hugo theme inspired by gruvbox. The pastel colors are high contrast, easily distinguishable, pleasing to the eye, and feature light and dark color palettes."
 
   [params.logo]
-    text = "gruvbox"
+    text = "rpchat"
     url = "/"
 
   [params.prism]
@@ -131,14 +131,9 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog"
-    weight = 10
-  [[menu.main]]
-    identifier = "cv"
-    name = "CV"
-    url = "/cv"
+    identifier = "Releases"
+    name = "Releases"
+    url = "/releases"
     weight = 20
   [[menu.main]]
     identifier = "about"

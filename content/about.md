@@ -3,7 +3,16 @@ title: "About"
 draft: false
 ---
 
-## Attributions
+## RpChat
+
+This theme has been happily vandalized by Alexis Rosovsky.
+
+Many thanks to [Michael Schnerring](https://github.com/schnerring/hugo-theme-gruvbox)
+for his work on this theme.
+
+Swiss cheese is the best. Just after roquefort. 🧀
+
+## Original attributions
 
 This theme depends on the following projects:
 
