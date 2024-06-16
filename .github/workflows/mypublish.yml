@@ -18,6 +18,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          token: ${{ secrets.PAT }}
 
       - name: Install Node
         uses: actions/setup-node@v4
@@ -29,9 +30,6 @@ jobs:
         with:
           hugo-version: "0.127.0"
           extended: true
-
-      - name: Install npm Packages
-        run: npm ci
 
       - name: Configure S3 credentials
         run: |
@@ -47,6 +45,17 @@ jobs:
         run: |
           export AWS_ENDPOINT_URL=${{ secrets.S3_ENDPOINT }}
           aws s3 cp s3://${{ secrets.S3_BUCKET_NAME }}/posts/$VERSION/release-$VERSION-rpchat.md  content/releases/
+
+      - name: Commit Changes
+        id: commit_changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        env:
+          VERSION: ${{ github.event.client_payload.version }}
+        with:
+          commit_message: Commit release post ${{ env.VERSION }}
+
+      - name: Install npm Packages
+        run: npm ci
 
       - name: Build Hugo
         run: hugo --minify
