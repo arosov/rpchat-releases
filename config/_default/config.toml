@@ -1,6 +1,6 @@
 baseURL = "http://localhost"
 copyright = "Copyright © 2021"
-title = "RpChat"
+title = "CoopCursors"
 #paginate = 10
 enableRobotsTXT = true
 # Enable to calculate the last modified date from Git history and show it in the post header
