@@ -3,7 +3,7 @@
   "basics": {
     "name": "RpChat",
     "label": "AI augmented chat app",
-    "image": "https://storage.googleapis.com/rpchat-releases/logo.png",
+    "image": "https://storage.googleapis.com/rpchat-releases/static/logo.png",
     "email": "",
     "phone": "",
     "summary": "App is in (very) early development",
